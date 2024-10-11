@@ -99,6 +99,13 @@
         z-index: 1;
         animation: fadeIn 1.5s ease-out;
       }
+      .hero-image {
+        width: 220px;
+        height: 220px;
+        border-radius: 100%;
+        animation: float 6s ease-in-out infinite;
+        z-index: 100;
+      }
 
       @keyframes fadeIn {
         from {
@@ -174,36 +181,36 @@
       }
 
       .floating-image:nth-child(1) {
-        top: 10%;
-        left: 5%;
-        width: 100px;
-        height: 100px;
+        top: 15%;
+        left: 7%;
+        width: 200px;
+        height: 200px;
         animation-delay: 0s;
       }
 
       .floating-image:nth-child(2) {
-        top: 70%;
+        top: 60%;
         right: 10%;
-        width: 150px;
-        height: 150px;
+        width: 190px;
+        height: 190px;
         animation-delay: 2s;
       }
 
       .floating-image:nth-child(3) {
-        top: 40%;
-        left: 80%;
-        width: 80px;
-        height: 80px;
+        top: 20%;
+        right: 10%;
+        width: 190px;
+        height: 190px;
         animation-delay: 4s;
       }
 
       @keyframes float {
         0%,
         100% {
-          transform: translateY(0);
+          transform: translateY(0) scale(1);
         }
         50% {
-          transform: translateY(-20px);
+          transform: translateY(-20px) scale(1.03);
         }
       }
 
@@ -551,6 +558,12 @@
     <main>
       <section class="hero" id="hero">
         <div class="hero-content">
+          <img
+            src="Photo4.jpeg"
+            alt="Floating Kick Fury
+"
+            class="hero-image"
+          />
           <h1>Kick Fury</h1>
           <p>
             In a world where cryptocurrencies are not just currencies but
@@ -565,7 +578,7 @@
             <a href="#community" class="btn btn-secondary">Join Community</a>
           </div>
         </div>
-        <div class="floating-images">
+        <!-- <div class="floating-images">
           <img
             src="Photo2.jpeg"
             alt="Floating Kick Fury
@@ -584,7 +597,7 @@
 "
             class="floating-image"
           />
-        </div>
+        </div> -->
       </section>
 
       <section class="features" id="features">
